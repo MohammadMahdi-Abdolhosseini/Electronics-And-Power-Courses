@@ -1,0 +1,73 @@
+Power_lineparam Report.
+30-Jan-2022 15:25:19
+
+COMMENTS:
+
+Example of a 735-kV three-phase line.                                                                                                                       
+Three bundles of 4 Bersfort ACSR 1355 MCM conductors ; two 1/2 inch-diameter steel ground wires.                                                            
+Ytower and Ymin are the average heights of conductors.                                                                                                      
+
+
+LINE GEOMETRY:
+
+Frequency (Hz): 50.00
+Ground resistivity (ohm.m): 100.000
+Number of phase conductors (bundles): 6
+Number of ground wires (bundles): 2
+
+Conductor  Phase      X         Ytower      Ymin     Conductor
+(bundle)   number    (m)         (m)         (m)     (bundle)type
+-----------------------------------------------------------------
+	1		 1		-5.500		25.892		20.892		1
+	2		 2		-7.500		19.592		14.592		1
+	3		 3		-6.000		13.592		8.592		1
+	4		 3		5.500		25.892		20.892		1
+	5		 2		7.500		19.592		14.592		1
+	6		 1		6.000		13.592		8.592		1
+	7		 0		-3.100		35.800		30.800		2
+	8		 0		3.100		35.800		30.800		2
+-----------------------------------------------------------------
+
+
+CONDUCTOR AND BUNDLE CHARACTERISTICS:
+
+Conductor   Conductor   Conductor   Conductor   Conductor DC  Conductor   Number    Bundle    Angle of
+(bundle)    Outside     T/D         GMR         resistance    relative    of        diameter  conductor
+Type        Diam.(cm)   ratio       (cm)        (Ohms/km)     permeab.    conduct.  (cm)      one (deg.)
+-------------------------------------------------------------------------------------------------------
+	1	    3.039		0.333		1.183		0.060		  1			  2			30.000	  20.00
+	2	    1.200		0.500		0.467		4.000		  1			  1			0.000	  0.00
+-------------------------------------------------------------------------------------------------------
+
+
+R, L, AND C LINE PARAMETERS:
+
+Resistance matrix R_matrix (ohm/km):
+
+0.0887  0.0731  0.0737  
+0.0731  0.0874  0.0731  
+0.0737  0.0731  0.0887  
+
+Inductance matrix L_matrix (H/km):
+
+1.3138e-03  8.6145e-04  8.1904e-04  
+8.6145e-04  1.3273e-03  8.6144e-04  
+8.1904e-04  8.6144e-04  1.3138e-03  
+
+Capacitance matrix C_matrix (F/km):
+
+1.9903e-08  -5.1885e-09  -3.3241e-09  
+-5.1885e-09  1.9883e-08  -5.1875e-09  
+-3.3241e-09  -5.1875e-09  1.9901e-08  
+
+Positive- & zero- sequence resistance [R1 Ro] (ohm/km):
+
+[ 0.0149 , 0.2349 ]
+
+Positive- & zero- sequence inductance [L1 Lo] (H/km):
+
+[ 4.7099e-04 , 3.0129e-03 ]
+
+Positive- & zero- sequence capacitance [C1 Co] (F/km):
+
+[ 2.4462e-08 , 1.0762e-08 ]
