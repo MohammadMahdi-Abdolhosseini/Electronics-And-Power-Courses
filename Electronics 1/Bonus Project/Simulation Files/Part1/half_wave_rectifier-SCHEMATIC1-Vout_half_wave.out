@@ -1,0 +1,107 @@
+
+**** 07/17/21 02:59:19 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Vout_half_wave"  [ C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part1\half_wave_rectifier-schematic1-vout_ha
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "half_wave_rectifier-schematic1-vout_half_wave.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.1s 0 10us 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\half_wave_rectifier-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING half_wave_rectifier-SCHEMATIC1.net ****
+* source HALF_WAVE_RECTIFIER
+V_V1         N00281 0  
++SIN 0 311.1 50 0 0 0
+X_TX1    N00357 0 N00384 0 SCHEMATIC1_TX1 
+R_R1         N00281 N00357  1  
+R_RL         0 VOUT  1.34k  
+C_C1         0 VOUT  100u  
+D_D1         N00384 VOUT D1N4001 
+
+.subckt SCHEMATIC1_TX1 1 2 3 4  
+K_TX1         L1_TX1 L2_TX1 1
+L1_TX1         1 2 9680mH
+L2_TX1         3 4 11.45mH
+.ends SCHEMATIC1_TX1
+
+**** RESUMING half_wave_rectifier-schematic1-vout_half_wave.sim.cir ****
+.END
+
+**** 07/17/21 02:59:19 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Vout_half_wave"  [ C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part1\half_wave_rectifier-schematic1-vout_ha
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4001         
+          IS   14.110000E-09 
+           N    1.984        
+         IKF   94.81         
+          BV   75            
+         IBV   10.000000E-06 
+          RS     .03389      
+          TT    5.700000E-06 
+         CJO   25.890000E-12 
+          VJ     .3245       
+           M     .44         
+
+
+**** 07/17/21 02:59:19 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Vout_half_wave"  [ C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part1\half_wave_rectifier-schematic1-vout_ha
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)-1.366E-15  (N00281)    0.0000 (N00357)    0.0000 (N00384)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .22
+

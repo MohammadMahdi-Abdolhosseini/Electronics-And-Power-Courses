@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Vout_half_wave"  [ C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part1\half_wave_rectifier-schematic1-vout_half_wave.sim ] 
+
+** Creating circuit file "half_wave_rectifier-schematic1-vout_half_wave.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.1s 0 10us 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\half_wave_rectifier-SCHEMATIC1.net" 
+
+
+.END

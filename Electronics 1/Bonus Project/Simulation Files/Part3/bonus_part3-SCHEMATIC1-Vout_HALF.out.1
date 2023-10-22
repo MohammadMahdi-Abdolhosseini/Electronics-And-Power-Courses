@@ -1,0 +1,67 @@
+
+**** 07/17/21 04:14:20 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Vout_HALF"  [ C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part3\bonus_part3-SCHEMATIC1-Vout_HALF.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bonus_part3-SCHEMATIC1-Vout_HALF.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.2s 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\bonus_part3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING bonus_part3-SCHEMATIC1.net ****
+* source BONUS_PART3
+R_RB2         0 N16625  3.9k  
+R_Re         0 VOUT  2k  
+R_RC3         N02604 VOUT_HALF  0.9k  
+C_C1         N02636 VOUT  1u  
+V_V2         VS 0  
++SIN 0 1m 10k 0 0 0
+R_RB6         0 N10825  360k  
+R_RC2         0 VO2  280  
+R_RE1         0 N16970  500  
+R_RE3         0 N02636  3k  
+C_C2         VO2 N10825  1u  
+C_C5         VI N16970  1u  
+R_RB1         N16625 VOUT_HALF  50k  
+Q_Q2         VO2 N07945 N09547 Q2N4355
+R_RC1         VO1 VOUT_HALF  29k  
+R_Rs         VI VS  25  
+X_TX1    N00357 0 N00384 0 SCHEMATIC1_TX1 
+Q_Q3         N02604 N10825 N02636 BC368 
+C_C3         VO1 N07945  1u  
+V_V1         N00281 0  
++SIN 0 311.1 50 0 0 0
+R_R1         N00281 N00357  1  
+C_C4         0 N16625  1u  
+Q_Q1         VO1 N16625 N16970 BC368 
+R_RB3         N07945 VOUT_HALF  480k  
+R_RE2         N09547 VOUT_HALF  0.75k  
+R_RB5         N10825 VOUT_HALF  95.3k  
+C_C1         0 VOUT_HALF  100u  
+$
+ERROR -- Name "C_C1" is defined more than once
+R_RB4         0 N07945  160k  
+D_D1         N00384 VOUT_HALF D1N4001 
+
+**** RESUMING bonus_part3-SCHEMATIC1-Vout_HALF.sim.cir ****
+.END
+

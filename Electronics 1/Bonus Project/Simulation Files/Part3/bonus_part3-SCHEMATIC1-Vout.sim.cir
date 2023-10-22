@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Vout"  [ C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part3\bonus_part3-SCHEMATIC1-Vout.sim ] 
+
+** Creating circuit file "bonus_part3-SCHEMATIC1-Vout.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 80ms 40ms 1us 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\bonus_part3-SCHEMATIC1.net" 
+
+
+.END

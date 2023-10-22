@@ -1,0 +1,51 @@
+
+**** 07/17/21 01:20:36 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Vout_half_wave"  [ C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part1\half_wave_rectifier-SCHEMATIC1-Vout_ha
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "half_wave_rectifier-SCHEMATIC1-Vout_half_wave.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.06s 0 100us 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\half_wave_rectifier-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING half_wave_rectifier-SCHEMATIC1.net ****
+* source HALF_WAVE_RECTIFIER
+V_V1         N00281 0  
++SIN 0 220*sqrt(2) 50 0 0 0
+--------------------------$
+ERROR -- Expecting keyword STIMULUS, saw 0.
+
+X_TX1    N00357 0 N00384 0 SCHEMATIC1_TX1 
+R_R1         N00281 N00357  1k  
+R_RL         0 VOUT  1.34k  
+C_C1         0 VOUT  10u  
+D_D1         N00384 VOUT D1N4001 
+
+.subckt SCHEMATIC1_TX1 1 2 3 4  
+K_TX1         L1_TX1 L2_TX1 1
+L1_TX1         1 2 5mH
+L2_TX1         3 4 10uH
+.ends SCHEMATIC1_TX1
+
+**** RESUMING half_wave_rectifier-SCHEMATIC1-Vout_half_wave.sim.cir ****
+.END
+

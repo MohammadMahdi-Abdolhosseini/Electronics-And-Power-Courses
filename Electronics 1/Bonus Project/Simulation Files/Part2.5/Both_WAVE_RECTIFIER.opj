@@ -1,0 +1,58 @@
+(ExpressProject "Both_WAVE_RECTIFIER"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\both_wave_rectifier.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\both_wave_rectifier-schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\both_wave_rectifier-schematic1-vout_half_full.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\both_wave_rectifier-schematic1-vout_half_full.sim"
+        (DisplayName "SCHEMATIC1-Vout_HALF_FULL")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part2.5\both_wave_rectifier.dsn")
+      (Path "Design Resources"
+         "C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part2.5\both_wave_rectifier.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\USERS\JOHN\DESKTOP\ELEC1\Simulation\Bonus\Part2.5\both_wave_rectifier.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 450"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 120 1416 104 593")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\JOHN\DESKTOP\ELEC1\SIMULATION\BONUS\PART2.5\BOTH_WAVE_RECTIFIER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
