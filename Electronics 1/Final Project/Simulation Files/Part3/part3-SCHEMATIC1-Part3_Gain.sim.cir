@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Part3_Gain"  [ c:\users\john\desktop\elec1\simulation\part3\part3-SCHEMATIC1-Part3_Gain.sim ] 
+
+** Creating circuit file "part3-SCHEMATIC1-Part3_Gain.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 1.5ms 1us 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part3-SCHEMATIC1.net" 
+
+
+.END

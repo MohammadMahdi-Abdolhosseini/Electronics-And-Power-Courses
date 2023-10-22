@@ -1,0 +1,145 @@
+
+**** 07/01/21 12:28:43 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Part3_Rin_Rout"  [ c:\users\john\desktop\elec1\simulation\part3\part3-SCHEMATIC1-Part3_Rin_Rout.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "part3-SCHEMATIC1-Part3_Rin_Rout.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 2000 1k 20k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part3-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING part3-SCHEMATIC1.net ****
+* source PART3
+V_VDC         N00977 0 10Vdc
+R_RB2         0 N16625  3.9k  
+R_Re         0 VOUT  2k  
+R_RC3         N02604 N00977  0.9k  
+C_C1         N02636 VOUT  1u  
+R_RB6         0 N10825  360k  
+R_RC2         0 VO2  280  
+R_RE1         0 N16970  500  
+R_RE3         0 N02636  3k  
+C_C2         VO2 N10825  1u  
+C_C5         VI N16970  1u  
+R_RB1         N16625 N00977  50k  
+Q_Q2         VO2 N07945 N09547 Q2N4355
+R_RC1         VO1 N00977  29k  
+R_Rs         VI N04748  25  
+Q_Q3         N02604 N10825 N02636 BC368 
+C_C3         VO1 N07945  1u  
+V_V3         N04748 0 DC 0Vdc AC 1mVac 
+C_C4         0 N16625  1u  
+Q_Q1         VO1 N16625 N16970 BC368 
+R_RB3         N07945 N00977  480k  
+R_RE2         N09547 N00977  0.75k  
+R_RB5         N10825 N00977  95.3k  
+R_RB4         0 N07945  160k  
+
+**** RESUMING part3-SCHEMATIC1-Part3_Rin_Rout.sim.cir ****
+.END
+
+**** 07/01/21 12:28:43 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Part3_Rin_Rout"  [ c:\users\john\desktop\elec1\simulation\part3\part3-SCHEMATIC1-Part3_Rin_Rout.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N4355         BC368           
+               PNP             NPN             
+          IS   12.270000E-12   14.060000E-15 
+          BF  194.8           187.6          
+          NF    1               1            
+         VAF  100             100            
+         IKF    1.123           4.103        
+         ISE   12.270000E-12  137.200000E-15 
+          NE    1.649           1.468        
+          BR    1.184           4.541        
+          NR    1               1            
+         IKR                    1.701        
+         ISC                   44.130000E-15 
+          NC                    1.471        
+          NK                     .5507       
+          RB   10                            
+          RC     .6              .091        
+         CJE  106.700000E-12  156.000000E-12 
+         VJE                     .5          
+         MJE     .5168           .3333       
+         CJC   48.280000E-12   52.240000E-12 
+         VJC                     .5          
+         MJC     .5615           .3333       
+          TF  867.000000E-12  964.800000E-12 
+         XTF     .8             1.001000E+03 
+         VTF    2              10            
+         ITF     .2           595.3          
+          TR  474.500000E-09   10.000000E-09 
+         XTB    1.5             1.5          
+          CN    2.2             2.42         
+           D     .52             .87         
+
+
+**** 07/01/21 12:28:43 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Part3_Rin_Rout"  [ c:\users\john\desktop\elec1\simulation\part3\part3-SCHEMATIC1-Part3_Rin_Rout.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VI)    0.0000  (  VO1)    3.7244  (  VO2)    1.4026  ( VOUT)    0.0000      
+
+(N00977)   10.0000 (N02604)    8.2005 (N02636)    6.0461 (N04748)    0.0000     
+
+(N07945)    5.7109 (N09547)    6.2230 (N10825)    6.7100 (N16625)     .7153     
+
+(N16970)     .1093 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDC       -7.481E-03
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   7.48E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .06
+

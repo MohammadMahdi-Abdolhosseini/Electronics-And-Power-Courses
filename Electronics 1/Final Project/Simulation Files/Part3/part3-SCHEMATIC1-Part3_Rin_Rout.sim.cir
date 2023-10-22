@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-Part3_Rin_Rout"  [ c:\users\john\desktop\elec1\simulation\part3\part3-SCHEMATIC1-Part3_Rin_Rout.sim ] 
+
+** Creating circuit file "part3-SCHEMATIC1-Part3_Rin_Rout.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC LIN 2000 1k 20k
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part3-SCHEMATIC1.net" 
+
+
+.END

@@ -1,0 +1,126 @@
+
+**** 06/29/21 04:36:27 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-DCQ"  [ C:\Users\John\Desktop\Elec1\Simulation\Part1_CommonCollector\part1_commoncollector-schematic1-dcq.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "part1_commoncollector-schematic1-dcq.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part1_commoncollector-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING part1_commoncollector-SCHEMATIC1.net ****
+* source PART1_COMMONCOLLECTOR
+R_RB5         N00682 N00977  95.3k  
+V_VDC         N00977 0 10Vdc
+R_R1         0 VOUT  1k  
+R_RC3         N02604 N00977  0.9k  
+C_C1         N02636 VOUT  1u  
+R_RB6         0 N00682  360k  
+R_RE3         0 N02636  3k  
+C_C2         VI N00682  1u  
+V_V1         VI 0  
++SIN 0 10m 10k 0 0 0
+Q_Q3         N02604 N00682 N02636 BC368 
+
+**** RESUMING part1_commoncollector-schematic1-dcq.sim.cir ****
+.END
+
+**** 06/29/21 04:36:27 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-DCQ"  [ C:\Users\John\Desktop\Elec1\Simulation\Part1_CommonCollector\part1_commoncollector-schematic1-dcq.si
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC368           
+               NPN             
+          IS   14.060000E-15 
+          BF  187.6          
+          NF    1            
+         VAF  100            
+         IKF    4.103        
+         ISE  137.200000E-15 
+          NE    1.468        
+          BR    4.541        
+          NR    1            
+         IKR    1.701        
+         ISC   44.130000E-15 
+          NC    1.471        
+          NK     .5507       
+          RC     .091        
+         CJE  156.000000E-12 
+         VJE     .5          
+         MJE     .3333       
+         CJC   52.240000E-12 
+         VJC     .5          
+         MJC     .3333       
+          TF  964.800000E-12 
+         XTF    1.001000E+03 
+         VTF   10            
+         ITF  595.3          
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 06/29/21 04:36:27 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-DCQ"  [ C:\Users\John\Desktop\Elec1\Simulation\Part1_CommonCollector\part1_commoncollector-schematic1-dcq.si
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VI)    0.0000  ( VOUT)    0.0000  (N00682)    6.7100 (N00977)   10.0000     
+
+(N02604)    8.2005 (N02636)    6.0461 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDC       -2.034E-03
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.03E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

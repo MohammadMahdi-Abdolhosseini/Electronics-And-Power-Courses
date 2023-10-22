@@ -1,0 +1,12 @@
+* source PART1_COMMONCOLLECTOR
+R_RB5         N00682 N00977  95.3k  
+V_VDC         N00977 0 10Vdc
+R_R1         0 VOUT  2k  
+R_RC3         N02604 N00977  0.9k  
+C_C1         N02636 VOUT  1u  
+R_RB6         0 N00682  360k  
+R_RE3         0 N02636  3k  
+C_C2         VI N00682  1u  
+V_V1         VI 0  
++SIN 0 4.5 10k 0 0 0
+Q_Q3         N02604 N00682 N02636 BC368 

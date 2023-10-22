@@ -1,0 +1,52 @@
+
+**** 06/29/21 01:14:05 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-DCQ"  [ C:\Users\John\Desktop\Elec1\Simulation\Part1_CommonCollector\part1_commoncollector-schematic1-dcq.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "part1_commoncollector-schematic1-dcq.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part1_commoncollector-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING part1_commoncollector-SCHEMATIC1.net ****
+* source PART1_COMMONCOLLECTOR
+R_RB5         N00682 N00977  300k  
+V_VDC         N00977 GND 10Vdc
+R_R1         GND N04667  1k  
+R_RC3         N02604 N00977  0.9k  
+C_C1         N02636 N04667  1u  
+R_RB6         GND N00682  360k  
+R_RE3         GND N02636  3k  
+C_C2         N04734 N00682  1u  
+V_V1         N04734 GND  
++SIN 0 1m 10k 0 0 0
+Q_Q3         N02604 N00682 N02636 BC368 
+
+**** RESUMING part1_commoncollector-schematic1-dcq.sim.cir ****
+.END
+
+ERROR -- Node N00682 is floating
+ERROR -- Node N00977 is floating
+ERROR -- Node GND is floating
+ERROR -- Node N04667 is floating
+ERROR -- Node N02604 is floating
+ERROR -- Node N02636 is floating
+ERROR -- Node N04734 is floating

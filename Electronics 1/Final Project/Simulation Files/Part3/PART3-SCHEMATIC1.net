@@ -1,0 +1,25 @@
+* source PART3
+V_VDC         N00977 0 10Vdc
+R_RB2         0 N16625  3.9k  
+R_Re         0 VOUT  2k  
+R_RC3         N02604 N00977  0.9k  
+C_C1         N02636 VOUT  1u  
+R_RB6         0 N10825  360k  
+R_RC2         0 VO2  280  
+R_RE1         0 N16970  500  
+R_RE3         0 N02636  3k  
+C_C2         VO2 N10825  1u  
+C_C5         VI N16970  1u  
+R_RB1         N16625 N00977  50k  
+Q_Q2         VO2 N07945 N09547 Q2N4355
+R_RC1         VO1 N00977  29k  
+R_Rs         VI N04748  25  
+Q_Q3         N02604 N10825 N02636 BC368 
+C_C3         VO1 N07945  1u  
+V_V3         N04748 0 DC 0Vdc AC 1mVac 
+C_C4         0 N16625  1u  
+Q_Q1         VO1 N16625 N16970 BC368 
+R_RB3         N07945 N00977  480k  
+R_RE2         N09547 N00977  0.75k  
+R_RB5         N10825 N00977  95.3k  
+R_RB4         0 N07945  160k  

@@ -1,0 +1,53 @@
+
+**** 06/30/21 02:25:57 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Part2_DCQ"  [ C:\Users\John\Desktop\Elec1\Simulation\Part2\part2-schematic1-part2_dcq.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "part2-schematic1-part2_dcq.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\part2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING part2-SCHEMATIC1.net ****
+* source PART2
+R_RB5         N10825 N00977  95.3k  
+R_RE2         N09547 N00977  0.75k  
+V_VDC         N00977 0 10Vdc
+R_R1         0 VOUT  1k  
+R_RC3         N02604 N00977  0.9k  
+C_C1         N02636 VOUT  1u  
+R_RB6         0 N10825  360k  
+R_RC2         0 N10978  3k  
+R_RE3         0 N02636  3k  
+C_C2         N10978 N10825  1u  
+Q_Q4         N09547 N07945 N10978 Q2N4355
+V_V1         VI 0  
++SIN 0 1.2 10k 0 0 0
+Q_Q3         N02604 N10825 N02636 BC368 
+C_C2         VI N07945  1u  
+$
+ERROR -- Name "C_C2" is defined more than once
+R_RB3         N07945 N00977  480k  
+R_RB4         0 N07945  160k  
+
+**** RESUMING part2-schematic1-part2_dcq.sim.cir ****
+.END
+

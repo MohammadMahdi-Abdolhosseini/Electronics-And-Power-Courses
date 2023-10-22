@@ -1,0 +1,18 @@
+* source PART2
+R_RB5         N10825 N00977  95.3k  
+R_RE2         N09547 N00977  0.75k  
+V_VDC         N00977 0 10Vdc
+R_R1         0 VOUT  2k  
+R_RC3         N02604 N00977  0.9k  
+C_C1         N02636 VOUT  1u  
+R_RB6         0 N10825  360k  
+R_RC2         0 VO2  280  
+R_RE3         0 N02636  3k  
+C_C2         VO2 N10825  1u  
+Q_Q2         VO2 N07945 N09547 Q2N4355
+V_V2         VI 0  
++SIN 0 5 10k 0 0 0
+Q_Q3         N02604 N10825 N02636 BC368 
+C_C3         VI N07945  1u  
+R_RB3         N07945 N00977  480k  
+R_RB4         0 N07945  160k  
